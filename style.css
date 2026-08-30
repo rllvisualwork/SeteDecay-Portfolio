@@ -844,14 +844,22 @@ ul{ list-style:none; }
 
   .stats__grid{ grid-template-columns: repeat(2, 1fr); }
 
-  .about__grid{ grid-template-columns: 1fr; gap: 2.2rem; }
-  .about__photo{ order: -1; aspect-ratio: 16/10; min-height: 0; transform: none; }
+  .about__grid{ grid-template-columns: 1fr; gap: 1.8rem; }
+  .about__photo{ order: -1; aspect-ratio: 4/5; min-height: 0; max-height: 65vh; transform: none; }
+  .about__photo img{ object-position: center 20%; } /* sube/baja este % para encuadrar mejor la cara */
   .about__note{ left: .8rem; bottom: .8rem; }
 
-  .schedule{ margin-top: 2.4rem; }
+  .schedule{ margin-top: 2.2rem; }
   .schedule__terminal{ max-width: 100%; }
 
-  .content__grid--3{ grid-template-columns: 1fr; }
+  .content{ padding-top: 0.5rem; padding-bottom: 4rem; }
+  .content__grid--3{ grid-template-columns: 1fr; gap: 1.1rem; }
+
+  .collabs{ padding: 2.4rem 0 4rem; }
+  .collabs__strip{ gap: 2.2rem; }
+  .logo-slot{ font-size: .85rem; }
+
+  .contact{ padding: 4.5rem var(--edge) 4rem; }
 }
 
 @media (max-width: 520px){
